@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF"
+    android:orientation="vertical"
+    android:paddingVertical="0dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/image_info_top2" />
+
+    <TextView
+        android:id="@+id/tv_wordl_fond_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_info_middle"
+        android:gravity="center"
+        android:textColor="#433C3C"
+        android:paddingHorizontal="16dp"
+        android:text="Nothing is available cdsljv dvknd dskvnsdkvndsklvnvnsdsnkdlvknv dvn dnds dnds"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/image_info_bottom" />
+</LinearLayout>

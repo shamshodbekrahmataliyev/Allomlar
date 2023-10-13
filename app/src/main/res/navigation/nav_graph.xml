@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fr_home">
+
+
+    <fragment
+        android:id="@+id/fr_home"
+        android:name="com.mac.allomalar.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fr_home_to_madrasaFragment"
+            app:destination="@id/madrasaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fr_user"
+        android:name="com.mac.allomalar.ui.fragments.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_fr_user_to_scholar_1Fragment"
+            app:destination="@id/scholar_1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/madrasaFragment"
+        android:name="com.mac.allomalar.ui.fragments.MadrasaFragment"
+        android:label="fragment_madrasa_2"
+        tools:layout="@layout/fragment_madrasa_2" >
+        <action
+            android:id="@+id/action_madrasaFragment_to_scholar_1Fragment"
+            app:destination="@id/scholar_1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scholar_1Fragment"
+        android:name="com.mac.allomalar.ui.fragments.Scholar_1Fragment"
+        android:label="fragment_scholar_1"
+        tools:layout="@layout/fragment_scholar_1" >
+        <action
+            android:id="@+id/action_scholar_1Fragment_to_scholars_2Fragment"
+            app:destination="@id/scholars_2Fragment" />
+        <action
+            android:id="@+id/action_scholar_1Fragment_to_scientificWorksFragment"
+            app:destination="@id/scientificWorksFragment" />
+        <action
+            android:id="@+id/action_scholar_1Fragment_to_worldFondFragment"
+            app:destination="@id/worldFondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scholars_2Fragment"
+        android:name="com.mac.allomalar.ui.fragments.Scholars_2Fragment"
+        android:label="fragment_scholars_2"
+        tools:layout="@layout/fragment_scholars_2" >
+        <action
+            android:id="@+id/action_scholars_2Fragment_to_fieldInformationFragment"
+            app:destination="@id/fieldInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fieldInformationFragment"
+        android:name="com.mac.allomalar.ui.fragments.FieldInformationFragment"
+        android:label="fragment_field_information"
+        tools:layout="@layout/fragment_field_information" />
+    <fragment
+        android:id="@+id/scientificWorksFragment"
+        android:name="com.mac.allomalar.ui.fragments.ScientificWorksFragment"
+        android:label="fragment_scientific_works"
+        tools:layout="@layout/fragment_scientific_works" />
+    <fragment
+        android:id="@+id/worldFondFragment"
+        android:name="com.mac.allomalar.ui.fragments.WorldFondFragment"
+        android:label="fragment_world_fond"
+        tools:layout="@layout/fragment_world_fond" />
+    <fragment
+        android:id="@+id/fr_map"
+        android:name="com.mac.allomalar.ui.fragments.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fr_home"
+        android:icon="@drawable/university"
+        android:title=""/>
+    <item
+        android:id="@+id/fr_map"
+        android:icon="@drawable/map"
+        android:title=""/>
+    <item
+        android:id="@+id/fr_user"
+        android:icon="@drawable/user_account"
+        android:title=""/>
+<!--    <item-->
+<!--        android:id="@+id/fr_settings"-->
+<!--        android:icon="@drawable/settings"-->
+<!--        android:title=""/>-->
+</menu>
